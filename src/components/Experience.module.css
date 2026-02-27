@@ -1,0 +1,112 @@
+.timeline {
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 20px;
+    border-left: 2px solid var(--border);
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    position: relative;
+    padding-left: 32px;
+    padding-bottom: 48px;
+}
+
+.item:last-child {
+    padding-bottom: 0;
+}
+
+.marker {
+    position: absolute;
+    left: -9px;
+    top: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    background: var(--bg-primary);
+    transition: all 0.3s;
+}
+
+.marker.active {
+    border-color: var(--accent-1);
+    background: var(--accent-1);
+    box-shadow: 0 0 16px rgba(0, 212, 255, 0.5);
+}
+
+.item:hover .marker {
+    border-color: var(--accent-1);
+    box-shadow: 0 0 12px rgba(0, 212, 255, 0.4);
+}
+
+.card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    transition: border-color 0.3s;
+}
+
+.card:hover {
+    border-color: var(--border-glow);
+}
+
+.orgRow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+}
+
+.orgLogo {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: var(--accent-1);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 0.75rem;
+    flex-shrink: 0;
+}
+
+.orgRow h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.orgName {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.date,
+.loc {
+    font-size: 0.8rem;
+    font-family: var(--mono);
+}
+
+.date {
+    color: var(--text-muted);
+}
+
+.loc {
+    color: var(--accent-2);
+}
+
+.card p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
