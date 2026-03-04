@@ -70,7 +70,7 @@ export default function About() {
                     <div className={`${styles.visual} animate-hidden fade-left`}>
                         <div className={styles.profileCard}>
                             <div className={styles.avatar}>
-                                <img src="/images/dp.jpg" alt="Haritha Kapugedara" className={styles.profileImage} />
+                                <img src={`${import.meta.env.BASE_URL}images/dp.jpg`} alt="Haritha Kapugedara" className={styles.profileImage} />
                                 <div className={styles.ring} />
                             </div>
                             <h3>Haritha Kapugedara</h3>
