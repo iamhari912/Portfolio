@@ -4,8 +4,6 @@ import styles from './Hero.module.css'
 
 const TEXTS = [
     'Aspiring Network Engineer · Cloud & Infrastructure · CCNA',
-    'Full Stack Developer · React · Node.js · MongoDB',
-    'AI Researcher · Explainable AI · Network Security',
 ]
 
 export default function Hero() {
@@ -38,7 +36,9 @@ export default function Hero() {
             if (!deleting) {
                 setDisplayed(current.slice(0, charIdx + 1))
                 if (charIdx + 1 === current.length) {
-                    setTimeout(() => setDeleting(true), 2300)
+                    if (TEXTS.length > 1) {
+                        setTimeout(() => setDeleting(true), 2300)
+                    }
                 } else {
                     setCharIdx(c => c + 1)
                 }
@@ -93,6 +93,7 @@ export default function Hero() {
                         <span key={t} className={styles.tag}>{t}</span>
                     ))}
                 </div>
+
             </div>
 
             <div className={styles.scrollIndicator}>

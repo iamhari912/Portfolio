@@ -4,6 +4,13 @@ import styles from './Projects.module.css'
 const projects = [
     {
         featured: true,
+        icon: '🍃',
+        title: 'AI-Based Mango Disease Detection',
+        desc: 'An AI-powered system designed to detect and classify diseases in mango leaves using machine learning models.',
+        tags: ['Machine Learning', 'Computer Vision', 'AI'],
+    },
+    {
+        featured: true,
         badge: 'Research · Ongoing',
         icon: '🔬',
         title: 'Explainable AI Network Monitoring System',

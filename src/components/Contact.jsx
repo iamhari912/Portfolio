@@ -5,39 +5,34 @@ import { IoMail, IoCall } from 'react-icons/io5'
 
 const links = [
     {
+        id: 'li',
         href: 'https://www.linkedin.com/in/haritha-kapugedara-8b8894280',
         iconClass: 'li',
         icon: <FaLinkedin />,
-        label: 'LinkedIn',
-        sub: 'linkedin.com/in/haritha-kapugedara-8b8894280',
     },
     {
+        id: 'gh',
         href: 'https://github.com/iamhari912',
         iconClass: 'gh',
         icon: <FaGithub />,
-        label: 'GitHub',
-        sub: 'github.com/iamhari912',
     },
     {
+        id: 'em',
         href: 'mailto:harithaasanka2000@gmail.com',
         iconClass: 'em',
         icon: <IoMail />,
-        label: 'Email',
-        sub: 'harithaasanka2000@gmail.com',
     },
     {
+        id: 'ph',
         href: 'tel:+94775117407',
         iconClass: 'ph',
         icon: <IoCall />,
-        label: 'Phone',
-        sub: '+94 77 511 7407',
     },
     {
+        id: 'wa',
         href: 'https://wa.me/94741990013',
         iconClass: 'wa',
         icon: <FaWhatsapp />,
-        label: 'WhatsApp',
-        sub: '+94 74 199 0013',
     },
 ]
 
@@ -54,12 +49,8 @@ export default function Contact() {
                 </p>
                 <div className={`${styles.links} animate-hidden`} data-delay="100">
                     {links.map(l => (
-                        <a key={l.label} href={l.href} target="_blank" rel="noreferrer" className={styles.card}>
-                            <div className={`${styles.icon} ${styles[l.iconClass]} `}>{l.icon}</div>
-                            <div>
-                                <strong>{l.label}</strong>
-                                <span>{l.sub}</span>
-                            </div>
+                        <a key={l.id} href={l.href} target="_blank" rel="noreferrer" className={styles.card}>
+                            <div className={`${styles.icon} ${styles[l.iconClass] || ''}`}>{l.icon}</div>
                         </a>
                     ))}
                 </div>

@@ -10,7 +10,7 @@ const technical = [
     },
     {
         icon: '☁️', title: 'DevOps & Cloud',
-        pills: ['Amazon Web Services (AWS)', 'Cloud Foundations', 'Storage Services', 'Microsoft Azure'],
+        pills: ['Amazon Web Services (AWS)', 'Cloud Foundations', 'Storage Services'],
     },
     {
         icon: '🤖', title: 'Machine Learning & AI',

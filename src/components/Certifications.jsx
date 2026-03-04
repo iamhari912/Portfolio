@@ -32,6 +32,11 @@ export default function Certifications() {
                         </div>
                     ))}
                 </div>
+                <div style={{ textAlign: 'center', margin: '60px 0 20px 0' }} className="animate-hidden">
+                    <a href="https://www.credly.com/users/kapugedara-haritha-asanka-bandara-kapugedara" target="_blank" rel="noreferrer" className="btn btn-primary">
+                        View My Badges on Credly
+                    </a>
+                </div>
             </div>
         </section>
     )
